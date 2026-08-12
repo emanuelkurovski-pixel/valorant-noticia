@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #0b0b10;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+
+/* CABEÇALHO */
+
+.header {
+    height: 75px;
+    padding: 0 7%;
+    background: #111117;
+    border-bottom: 1px solid #292932;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: #ff4655;
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    color: #dddddf;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff4655;
+}
+
+#menuBtn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 25px;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 600px;
+    padding: 70px 7%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+
+    align-items: center;
+
+    background:
+        linear-gradient(
+            90deg,
+            #0b0b10 20%,
+            rgba(11, 11, 16, 0.75)
+        ),
+        url("valorant.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.categoria {
+    color: #ff4655;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    line-height: 1.05;
+    margin: 20px 0;
+}
+
+.hero h1 strong {
+    display: block;
+    color: #ff4655;
+}
+
+.hero p {
+    max-width: 600px;
+    color: #c7c7cd;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.botao {
+    display: inline-block;
+    padding: 15px 28px;
+
+    background: #ff4655;
+    color: white;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: #d92f3d;
+    transform: translateY(-2px);
+}
+
+.hero-image img {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/* ARTIGO */
+
+.artigo {
+    width: 90%;
+    max-width: 900px;
+    margin: 70px auto;
+}
+
+.data {
+    color: #888891;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.artigo > p {
+    color: #d4d4d8;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.artigo h2 {
+    color: #ffffff;
+    font-size: 32px;
+    margin-top: 55px;
+    margin-bottom: 20px;
+
+    border-left: 4px solid #ff4655;
+    padding-left: 15px;
+}
+
+
+/* CARDS */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 35px 0;
+}
+
+.card {
+    padding: 25px;
+    background: #15151d;
+    border: 1px solid #282832;
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #ff4655;
+}
+
+.card span {
+    color: #ff4655;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+.card p {
+    color: #a9a9b1;
+}
+
+
+/* FUNÇÕES */
+
+.funcoes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.funcao {
+    padding: 25px;
+    border-radius: 8px;
+    border-left: 5px solid;
+}
+
+.funcao h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.funcao p {
+    color: #c7c7cc;
+}
+
+.duelista {
+    background: #32161a;
+    border-color: #ff4655;
+}
+
+.controlador {
+    background: #171e35;
+    border-color: #5b7cff;
+}
+
+.iniciador {
+    background: #18291d;
+    border-color: #52c878;
+}
+
+.sentinela {
+    background: #30271a;
+    border-color: #e4b44c;
+}
+
+
+/* DESTAQUE */
+
+.destaque {
+    margin: 50px 0;
+    padding: 30px;
+
+    background: #17171f;
+    border: 1px solid #30303a;
+    border-radius: 10px;
+}
+
+.destaque h2 {
+    margin: 0 0 10px;
+    border: none;
+    padding: 0;
+    color: #ff4655;
+}
+
+.destaque p {
+    color: #ccccd1;
+}
+
+
+/* TABELA */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background: #15151c;
+}
+
+th,
+td {
+    padding: 15px;
+    border: 1px solid #303039;
+    text-align: left;
+}
+
+th {
+    background: #ff4655;
+    color: white;
+}
+
+td {
+    color: #ccccd2;
+}
+
+
+/* AUTOR */
+
+.autor {
+    margin-top: 60px;
+    padding: 30px;
+
+    background: #15151c;
+    border-radius: 10px;
+}
+
+.autor h2 {
+    margin-top: 0;
+}
+
+.autor p {
+    color: #c4c4ca;
+    margin-bottom: 8px;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    padding: 30px;
+    text-align: center;
+    background: #111117;
+    color: #85858e;
+
+    border-top: 1px solid #292932;
+}
+
+footer p {
+    margin: 5px;
+}
+
+
+/* RESPONSIVO */
+
+@media (max-width: 800px) {
+
+    nav {
+        display: none;
+        position: absolute;
+
+        top: 75px;
+        left: 0;
+
+        width: 100%;
+
+        background: #111117;
+
+        flex-direction: column;
+        align-items: center;
+
+        padding: 25px;
+    }
+
+    nav.ativo {
+        display: flex;
+    }
+
+    #menuBtn {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 50px 7%;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero-image {
+        display: none;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .funcoes {
+        grid-template-columns: 1fr;
+    }
+
+    .artigo {
+        width: 92%;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th,
+    td {
+        padding: 10px;
+    }
+}
